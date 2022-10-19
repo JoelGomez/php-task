@@ -1,0 +1,39 @@
+.th-estatus{
+    width: 120px;
+    text-align: center;
+}
+
+.td-estatus{
+    text-align: center;
+}
+
+.iconos-acciones{
+    font-size: 1.1rem;
+    text-align: center; 
+    font-weight: bold !important; 
+}
+
+.iconos-acciones > a{
+    padding: 0 5px;
+}
+
+.th-acciones{
+    width: 130px;
+    text-align: center;
+}
+
+
+.owner{
+    margin: 0 auto;
+    font-size: 1.3rem;
+    background-color: #CCC;
+    text-align: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+textarea {
+    resize: none;
+  }

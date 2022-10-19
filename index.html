@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>ToDo</title>
+  </head>
+  <body class="bg-light">
+    <header class="container">
+      <nav class="navbar bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand"><h1 class="display-6">To Do</h1></a>
+          <form class="d-flex" role="search">
+            <button
+              class="btn btn-outline-primary"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Agregar nueva tarea
+            </button>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <div class="card">
+        <div class="card-body">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th class="text-center">#</th>
+                <th>Tarea</th>
+                <th class="th-estatus">Estatus</th>
+                <th>Propietario</th>
+                <th class="th-acciones">Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>01</td>
+                <td>Liberar la infraestructura productiva del SIRE</td>
+                <td class="td-estatus">
+                  <div>
+                    <a
+                      href="#"
+                      data-bs-toggle="tooltip"
+                      data-bs-title="Por iniciar"
+                      ><i class="bi bi-square-fill"></i
+                    ></a>
+                    <a
+                      href="#"
+                      data-bs-toggle="tooltip"
+                      data-bs-title="En progreso"
+                    >
+                      <i class="bi bi-square-fill"></i
+                    ></a>
+                    <a
+                      href="#"
+                      data-bs-toggle="tooltip"
+                      data-bs-title="Detenida"
+                    >
+                      <i class="bi bi-square-fill"></i
+                    ></a>
+                    <a
+                      href="#"
+                      data-bs-toggle="tooltip"
+                      data-bs-title="En revisión"
+                    >
+                      <i class="bi bi-square-fill"></i
+                    ></a>
+                    <a
+                      href="#"
+                      data-bs-toggle="tooltip"
+                      data-bs-title="Finalizada"
+                    >
+                      <i class="bi bi-square"></i
+                    ></a>
+                  </div>
+                </td>
+                <td>
+                  <div class="owner">
+                    <i class="bi bi-person-fill"></i>
+                  </div>
+                </td>
+                <td class="iconos-acciones">
+                  <a href="add-update.html" data-bs-toggle="tooltip" data-bs-title="Editar"
+                    ><i class="bi bi-pencil-square text-info"></i
+                  ></a>
+                  <a href="#" data-bs-toggle="tooltip" data-bs-title="Archivar"
+                    ><i class="bi bi-box-arrow-down text-warning"></i
+                  ></a>
+                  <a href="#" data-bs-toggle="tooltip" data-bs-title="Eliminar">
+                    <i class="bi bi-trash text-danger"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>02</td>
+                <td>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusamus, ipsam nisi?
+                </td>
+
+                <td class="td-estatus">
+                  <div>
+                    <a
+                      href="#"
+                      data-bs-toggle="tooltip"
+                      data-bs-title="Por iniciar"
+                      ><i class="bi bi-square-fill"></i
+                    ></a>
+                    <a
+                      href="#"
+                      data-bs-toggle="tooltip"
+                      data-bs-title="En progreso"
+                    >
+                      <i class="bi bi-square-fill"></i
+                    ></a>
+                    <a
+                      href="#"
+                      data-bs-toggle="tooltip"
+                      data-bs-title="Detenida"
+                    >
+                      <i class="bi bi-square"></i
+                    ></a>
+                    <a
+                      href="#"
+                      data-bs-toggle="tooltip"
+                      data-bs-title="En revisión"
+                    >
+                      <i class="bi bi-square"></i
+                    ></a>
+                    <a
+                      href="#"
+                      data-bs-toggle="tooltip"
+                      data-bs-title="Finalizada"
+                    >
+                      <i class="bi bi-square"></i
+                    ></a>
+                  </div>
+                </td>
+                <td>
+                  <div class="owner">
+                    <i class="bi bi-person-fill"></i>
+                  </div>
+                </td>
+                <td class="iconos-acciones">
+                  <a href="#" data-bs-toggle="tooltip" data-bs-title="Editar"
+                    ><i class="bi bi-pencil-square text-info"></i
+                  ></a>
+                  <a href="#" data-bs-toggle="tooltip" data-bs-title="Archivar"
+                    ><i class="bi bi-box-arrow-down text-warning"></i
+                  ></a>
+                  <a href="#" data-bs-toggle="tooltip" data-bs-title="Eliminar">
+                    <i class="bi bi-trash text-danger"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>03</td>
+                <td>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequatur, cum iste! Aspernatur distinctio ipsum mollitia in
+                  tempore neque aperiam minus vel eaque eveniet et odio esse,
+                  suscipit consectetur officia provident!
+                </td>
+                <td class="td-estatus">
+                  <div>
+                    <a
+                      href="#"
+                      data-bs-toggle="tooltip"
+                      data-bs-title="Por iniciar"
+                      ><i class="bi bi-square-fill"></i
+                    ></a>
+                    <a
+                      href="#"
+                      data-bs-toggle="tooltip"
+                      data-bs-title="En progreso"
+                    >
+                      <i class="bi bi-square-fill"></i
+                    ></a>
+                    <a
+                      href="#"
+                      data-bs-toggle="tooltip"
+                      data-bs-title="Detenida"
+                    >
+                      <i class="bi bi-square"></i
+                    ></a>
+                    <a
+                      href="#"
+                      data-bs-toggle="tooltip"
+                      data-bs-title="En revisión"
+                    >
+                      <i class="bi bi-square"></i
+                    ></a>
+                    <a
+                      href="#"
+                      data-bs-toggle="tooltip"
+                      data-bs-title="Finalizada"
+                    >
+                      <i class="bi bi-square"></i
+                    ></a>
+                  </div>
+                </td>
+                <td>
+                  <div class="owner">
+                    <i class="bi bi-person-fill"></i>
+                  </div>
+                </td>
+                <td class="iconos-acciones">
+                  <a href="#" data-bs-toggle="tooltip" data-bs-title="Editar"
+                    ><i class="bi bi-pencil-square text-info"></i
+                  ></a>
+                  <a href="#" data-bs-toggle="tooltip" data-bs-title="Archivar"
+                    ><i class="bi bi-box-arrow-down text-warning"></i
+                  ></a>
+                  <a href="#" data-bs-toggle="tooltip" data-bs-title="Eliminar">
+                    <i class="bi bi-trash text-danger"></i>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Agregar nueva tarea
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <form action="#">
+                <div class="row">
+                <div class="col-6">
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Fecha</label
+                    >
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="txt-task-date"                    
+                    />
+                  </div>
+                  <div class="col-6">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >Estatus</label
+                  >
+                  <select class="form-select">
+                    <option value="0" selected>Por iniciar</option>
+                    <option value="1">En progreso</option>
+                    <option value="2">En revisión</option>
+                    <option value="3">Finalizada</option>
+                    <option value="4">Detenida</option>
+                  </select>
+                </div>
+            </div>
+                <div>
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Tarea</label
+                    >
+                    <textarea class="form-control" rows="5" name="txt-task" id="txt-task"></textarea>
+                  </div>
+                  <div class="form-check mt-2">
+                    <input class="form-check-input" type="checkbox" id="" >
+                    <label class="form-check-label" for="">
+                      Privado
+                    </label>
+                  </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+            <button type="button" class="btn btn-primary">
+              Guardar cambios
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    const tooltipTriggerList = document.querySelectorAll(
+      '[data-bs-toggle="tooltip"]'
+    );
+    const tooltipList = [...tooltipTriggerList].map(
+      (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+    );
+  </script>
+</html>
